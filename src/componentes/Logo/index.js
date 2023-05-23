@@ -1,25 +1,25 @@
 import logo from '../../imagens/logo.png'
 import styled from 'styled-components'
 
-
-
 const LogoContainer = styled.div`
-    float: left;
-    /* Alinha a imagem à esquerda */
-    margin-right: 10px;
+    float: right;
+    margin-right: 20px;
+    animation: go-back 2s;
 
 }
 
 .logo-img {
     float: left;
-    /* Alinha a imagem à esquerda */
     margin-right: 10px;
+    border-width: 30px;
+    
 }
 
 .Cabecalho {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 150%;
+    font-size: 300%;
     font-size-adjust: inherit;
+    
 
 }
 
@@ -28,14 +28,24 @@ const LogoContainer = styled.div`
     font-size: 130%;
     color: black;
     margin-top: initial;
-    padding: 15px;
+    padding: 40px;
     background: rgba(189, 23, 139, 0);
     background-clip: padding-box;
+    background-color: Wheat;
+    border-color:  Wheat;
+    border-radius: 30px;
+    
 }
+
+@keyframes go-back {
+    0% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+
 `
-
-
-
 
 function Logo() {
     return (
